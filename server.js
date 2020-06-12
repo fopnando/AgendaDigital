@@ -1,17 +1,17 @@
 const express = require('express');
 const path = require('path');
+const nomeApp = process.env.npm_package_name;
 const app = express();
-
-const PORT = process.env.PORT || 8082;
-
-app.use(express.static(__dirname + '/dist/app-agenda'));
-// para ter certeza do caminho faça o build do projeto com o 
-//   comando npm run build --prod
-
+ 
+app.use(express.static(`${__dirname}/dist/${app-agenda}`));
+ 
 app.get('/*', (req, res) => {
-    res.sendFile(__dirname + '/dist/app-agenda/index.html');
-})
-
+res.sendFile(path.join(`${__dirname}/dist/${app-agenda}/index.html`));
+});
+ 
+app.listen(process.env.PORT || 8080);
 app.listen(PORT, () => {
     console.log('Servidor Iniciado na Porta' + PORT);
 })
+
+
