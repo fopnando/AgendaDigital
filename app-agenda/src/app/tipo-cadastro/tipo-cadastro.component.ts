@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TipoCadastroComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {

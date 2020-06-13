@@ -13,6 +13,7 @@ import { SharedModule } from './share/share.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { TipoCadastroComponent } from './tipo-cadastro/tipo-cadastro.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { TipoCadastroComponent } from './tipo-cadastro/tipo-cadastro.component';
     LoginComponent,
     HomeComponent,
     TipoCadastroComponent,
-    CadastroEmpresaComponent
+    CadastroEmpresaComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
