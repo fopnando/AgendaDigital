@@ -15,14 +15,14 @@
       <div class="row margin">
         <div class="input-field col s12">
           <i class="large material-icons prefix">person_outline</i>
-          <input id="username" type="text">
+          <input (input)="usuario.nome=$event.target.value" id="username" type="text">
           <label for="username" class="center-align">Nome</label>
         </div>
       </div>
       <div class="row margin">
         <div class="input-field col s12">
           <i class="large material-icons prefix">lock_outline</i>
-          <input id="password" type="password">
+          <input (input)="usuario.senha=$event.target.value" id="password" type="password">
           <label for="password">Senha</label>
         </div>
       </div>
