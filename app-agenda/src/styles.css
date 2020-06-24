@@ -2,12 +2,29 @@
   background-color: #ecf0f5;
 }
 
+/*.btn{
+  background-color: #0069d9;
+}*/
+
+/* Ajustes Layout Menu Principal */
 .fonteMenu{
   font-weight: 100;
   left: 50%;
   font-size: 20px;
-  transform: translateX(-50%);
+
 }
+
+.sidenav li>a {
+  color: azure;
+}
+
+ul#mobile-demo.sidenav{
+   background-color: #ee6e73;
+  width: 60%;
+ /*  top: 56px; */
+
+
+ }
 
 .tipocadClie{
   margin: 0 50px 0 0;
@@ -20,35 +37,3 @@
   color: inherit;
 }
 
-/*Jumbotrons*/
-
-.BemVindo {
-  background-color: #fff;
-  border-radius: 6px;
-  text-align:center;
-  padding-top: 30px;
-  padding-bottom: 60px;
-  margin-bottom: 30px;
-  color: inherit;
-}
-.BemVindo h2 {
-  font-size: 36px;
-}
-
-.inicio-BemVindo h1 {
-  color: #555555;
-  margin-bottom: 38px;
-  font-size: 36px;
-  font-family: 'Source Sans Pro',sans-serif;
-  font-weight: 500;
-  padding-bottom: 15px;
-}
-
-.inicio-BemVindo p {
-  color: #555555;
-  margin: 30px 30px 0 37px;
-  margin-bottom: 60px;
-  font-size: 18px;
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-  font: weight 200;
-}

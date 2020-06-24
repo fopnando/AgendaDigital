@@ -1,3 +1,5 @@
+import { AppComponent } from './../app.component';
+import { LoginComponent } from './../login/login.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,6 +13,7 @@ export class TipoCadastroComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

@@ -1,6 +1,13 @@
 
 export class Usuario {
 
-  nome: String;
-  senha: String;
+
+constructor(nome: string, senha: string) {
+  this.nome = nome;
+  this.senha = senha;
+}
+
+nome: String;
+senha: String;
+
 }

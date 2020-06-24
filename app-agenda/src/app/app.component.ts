@@ -1,4 +1,6 @@
+import { AuthService } from './login/auth.service';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app-agenda';
+  title = 'rotas';
+  mostrarMenu: boolean=true;
+
+
+  constructor(private authService: AuthService){
+
 }
+ngOnInit(){
+
+
+
+};
+
+
+}
+
+
