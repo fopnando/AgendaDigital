@@ -1,4 +1,3 @@
-import { CampoControlErroComponent } from './share/campo-control-erro/campo-control-erro.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { cadastroclienteModule} from './cadastro-cliente/cadastro-cliente.module'
@@ -14,6 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { TipoCadastroComponent } from './tipo-cadastro/tipo-cadastro.component';
 import { MenuComponent } from './menu/menu.component';
 import { MaterializeModule } from 'angular2-materialize';
+import { AuthGuard } from './guarda-rotas/auth.guard';
+import { CursosListaComponent } from './cursos-lista/cursos-lista.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { MaterializeModule } from 'angular2-materialize';
     TipoCadastroComponent,
     CadastroEmpresaComponent,
     MenuComponent,
+    CursosListaComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,7 @@ import { MaterializeModule } from 'angular2-materialize';
     SharedModule,
     cadastroclienteModule
   ],
-  providers: [LoginComponent],
+  providers: [AuthGuard,LoginComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

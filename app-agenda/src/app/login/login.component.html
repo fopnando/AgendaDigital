@@ -2,7 +2,7 @@
 
 <div id="login-page" class="row">
   <div class="col s12">
-   <form [formGroup]="formulario" (ngSubmit)="onsubmit()"class="login-form">
+   <form [formGroup]="formulario" class="login-form">
       <div class="row">
         <div class="input-field col s12 center">
           <i class="large material-icons">event_note</i>
@@ -16,7 +16,7 @@
         <div class="form-group" class="input-field col s12">
           <i class="large material-icons prefix">person_outline</i>
         <!--  <input (input)="usuario.nome=$event.target.value" id="username" type="text"> -->
-          <input type="text" formControlName="nome" id="nome" placeholder="">
+          <input type="text" formControlName="nome"  placeholder="">
           <app-campo-control-erro [mostrarErro]="verificaValidTouched('nome')" msgErro="Nome deve ter 5 a 15 Digitos!">
           </app-campo-control-erro>
           <label for="username" class="center-align">Nome</label>
@@ -27,7 +27,7 @@
         <div class="form-group" class="input-field col s12">
           <i class="large material-icons prefix">lock_outline</i>
          <!-- <input (input)="usuario.senha=$event.target.value" id="password" type="password">-->
-         <input type="text" formControlName="senha" id="senha" placeholder="">
+         <input type="text" formControlName="senha"  placeholder="">
          <app-campo-control-erro [mostrarErro]="verificaValidTouched('senha')" msgErro="Nome inválido.">
         </app-campo-control-erro>
          <label for="password">Senha</label>
@@ -44,7 +44,7 @@
       </div>
       <div class="row">
         <div class="input-field col s6 offset-s3">
-          <button class="waves-light btn-small"  type="submit" name="action">
+          <button class="waves-light btn-small"  type="submit" name="action" (click)="list()">
             <i class="material-icons left">cloud</i>Entrar
           </button>
           <app-campo-control-erro msgErro="Nome de Usuario ou Senha Inválidos">

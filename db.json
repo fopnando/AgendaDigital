@@ -1,0 +1,40 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "usuario": "fernando",
+      "senha": "123"
+    },
+    {
+      "id": 2,   
+      "usuario": "alice",
+      "senha": "456"
+    }
+  ],
+
+  "cliente": [
+    {
+      "id": 1,
+      "nome": "fernando",
+      "senha": "123"
+    },
+    {
+      "id": 2,
+      "nome": "alice ",
+      "senha": "2013"
+    }
+  ],
+
+  "empresa": [
+    {
+      "id": 1,
+      "nome": "fernando",
+      "senha": "123"
+    },
+    {
+      "id": 2,
+      "nome": "alice ",
+      "senha": "2013"
+    }
+  ]
+}

@@ -1,4 +1,3 @@
-import { AuthService } from './login/auth.service';
 import { Component } from '@angular/core';
 
 
@@ -12,7 +11,7 @@ export class AppComponent {
   mostrarMenu: boolean=true;
 
 
-  constructor(private authService: AuthService){
+  constructor(){
 
 }
 ngOnInit(){

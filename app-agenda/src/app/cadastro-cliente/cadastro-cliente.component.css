@@ -1,0 +1,17 @@
+
+.div.BemVindo.inicio-BemVindo{
+  margin-left: 9px;
+}
+
+.BemVindo {
+  background-color: #fff;
+  border-radius: 6px;
+  text-align:center;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  color: inherit;
+  width: 95%;
+  align-content: center;
+  margin-left: 9px!important;
+}
